@@ -1,0 +1,241 @@
+/*====================
+RaSolar CSS
+=====================*/
+
+/*=============General Styles============*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+h1 {
+    color: #7EBCE7; /* Light Blue */
+    font-size: 200%;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 100%;
+    color: #4a4a4a; /* Dark Grey */
+    line-height: 1.6;
+}
+a{
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+body {
+    font-family: 'Signika', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+main {
+    width: 100%;
+}
+section {
+    height: 500px;
+    position: relative;
+}
+.divWrapper {
+    margin: 0 auto;
+    max-width: 1124px;
+    padding: 50px;
+}
+.bold {
+    font-weight: 700;
+}
+/*--------Header-----------*/
+header {
+    background-color: #112c4a; /* Dark Blue */
+    height: 85px;
+    width: 100%;
+}
+nav {
+    width: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+#logo {
+    background-image: url('images/ra_logo_w_rgb.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    float: left;
+    height: 50px;
+    margin: 27px;
+    text-indent: -1000px;
+    width: 300px;
+}
+nav ul {
+    display: inline-block;
+    margin: 0 auto;
+}
+nav li {
+    float: left;
+    line-height: 80px;
+    padding-right: 40px;
+}
+nav li:last-child {
+    padding-right: 0;
+}
+nav a {
+    color: #FFF;
+    text-decoration: none;
+}
+nav a:hover, nav a:focus, nav a:active {
+    text-decoration: underline;
+}
+
+.sticky {  
+    left: 0; 
+    margin: 0 auto;
+    position: fixed;  
+    top: 0;
+    width: 100%;
+    z-index: 100;     
+}  
+
+.sticky ul {
+    -webkit-box-shadow: 0 1px 3px #000;
+    -moz-box-shadow: 0 1px 3px #000;
+    -ms-box-shadow: 0 1px 3px #000;
+    -o-box-shadow: 0 1px 3px #000; 
+    box-shadow: 0 1px 3px #000;
+	height: 85px;
+    background-color: #112c4a; /* Dark Blue */
+    display: inline-block;
+    width: 100%;
+    max-width: 1124px;
+}
+
+.sticky li:last-child {
+    padding-right: 0;
+}
+
+.sticky a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.sticky a:hover, .sticky a:focus, .sticky a:active  {
+    text-decoration: underline;
+}
+
+#contactBtn {
+    padding: 10px;
+    background-color: #7EBCE7; /* Light Blue */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#contactBtn:hover {
+    color:  #7EBCE7; /* Light Blue */
+    background-color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+	-moz-transition:  all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+	-o-transition:  all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+/*---------Main--------------*/
+
+/* Introduction */
+#divIntroduction {
+    background-image: url('images/solar_panels_01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+#divIntroduction p {
+    color: #FFF;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 250%;
+    padding-top: 200px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+.secAboutUs {
+    text-align: center;
+    padding: 100px;
+}
+
+.secOurMethod {
+    background-color: #ccc;
+}
+.secOurMethod .divWrapper {
+    padding: 50px;
+}
+.imgLeft {
+    float: left;
+    margin-right: 15px;
+}
+
+.secLetsTalkNumbers {
+    background-color: #7EBCE7; /* Light Blue */
+}
+.secLetsTalkNumbers h1 {
+    color: #FFF;
+}
+
+.secContactUs {
+    height: 600px;
+}
+
+/* Contact Form */
+
+.contact_form {
+	margin: 0 auto;
+	width: 50%;
+	padding: 15px 30px;
+}
+.contact_form label {
+	display: block;
+	margin-bottom: 5px;
+}
+.contact_form input {
+	width: 100%;
+	display: block;
+	margin-bottom: 15px;
+	height: 25px;
+}
+.contact_form textarea {
+	width: 100%;
+	height: 200px;
+}
+.contact_form input[type="submit"]{
+	width: auto;
+	margin: 0 auto;	
+	margin-top: 10px;
+	margin-bottom: 60px;
+	background-color: #666;
+	color: #FFF;
+}
+.contact_form input[type="submit"]:hover {
+	background-color: #3CC;
+}
+
+/*--------Footer---------*/
+footer {
+    background-color: #000;
+    font-size: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+    height: 50px;
+}
+
+
+/*=============Media Queries============*/
+@media (max-width: 640px) {
+    header {    
+        height: 200px;
+    }
+    #mainNavigation {
+        padding-top: 100px;
+    }
+}
